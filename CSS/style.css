@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url("/images/augustine-wong-li0iC0rjvvg-unsplash.jpg") top right fixed;
+  background: url("images/augustine-wong-li0iC0rjvvg-unsplash.jpg") top right fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
