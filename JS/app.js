@@ -23,13 +23,13 @@ function createTaskElement() {
     deleteBtn = document.createElement('img');
     deleteBtn.addEventListener('click', removeTask);
     deleteBtn.dataset.arg = index;
-    deleteBtn.src = '/images/delete.png';
+    deleteBtn.src = 'images/delete.png';
     deleteBtn.className = 'delete';
     // // create dont btn
     doneBtn = document.createElement('img');
     doneBtn.addEventListener('click', completeTask);
     doneBtn.dataset.arg = index;
-    doneBtn.src = '/images/done.png';
+    doneBtn.src = 'images/done.png';
     doneBtn.className = 'done';
 
     section.appendChild(newTask);
