@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #2d3142;
+}
+
+body {
+  background: url("/images/augustine-wong-li0iC0rjvvg-unsplash.jpg") top right fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  margin-top: 100px;
+}
+
+body header h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 100px;
+}
+
+body header .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .add #input {
+  padding: 20px 30px;
+  outline: none;
+  border: 2px solid #8b898c;
+  border-radius: 20px;
+  width: 700px;
+}
+
+body header .add #input:focus {
+  border: #8b898c;
+  -webkit-box-shadow: 0 4px 8px 0 #4f5d7594, 0 6px 20px 0 #4f5d755e;
+          box-shadow: 0 4px 8px 0 #4f5d7594, 0 6px 20px 0 #4f5d755e;
+}
+
+body header .add #button {
+  background-color: #ef8354;
+  border-radius: 50%;
+  width: 60px;
+  outline: none;
+  margin-left: 5px;
+}
+
+body header .add #button:hover {
+  background-color: #ec682f;
+  cursor: pointer;
+}
+
+body main {
+  margin-top: 40px;
+  text-align: center;
+  min-width: 40%;
+}
+
+body main #starting-text {
+  color: #8b898c;
+}
+
+body main section {
+  margin: auto;
+}
+
+body main section .task {
+  max-width: 70%;
+  display: block;
+  background-color: #bfc0c04d;
+  border-radius: 20px;
+  position: relative;
+  font-size: 20px;
+  padding: 30px;
+}
+
+body main section .task .text {
+  padding: 0 10px;
+  text-align: left;
+  max-width: 90%;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+body main section .task .delete {
+  opacity: 0.5;
+  width: 30px;
+  position: absolute;
+  top: 40%;
+  right: 30px;
+}
+
+body main section .task .delete:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+body main section .task .done {
+  width: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+}
+
+body main section .task .done:hover {
+  background-color: #ed7541;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fade-slide-in {
+  0% {
+    bottom: 40px;
+    opacity: 0.2;
+  }
+  50% {
+    bottom: 20px;
+    opacity: 0.7;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-slide-in {
+  0% {
+    bottom: 40px;
+    opacity: 0.2;
+  }
+  50% {
+    bottom: 20px;
+    opacity: 0.7;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.margin {
+  margin: 15px auto 0;
+}
+/*# sourceMappingURL=style.css.map */

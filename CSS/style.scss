@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #2d3142;
+}
+body {
+  background: url('/images/augustine-wong-li0iC0rjvvg-unsplash.jpg') top right
+    fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  header {
+    margin-top: 100px;
+    h1 {
+      text-align: center;
+      padding-bottom: 50px;
+      font-size: 100px;
+    }
+    .add {
+      display: flex;
+      #input {
+        padding: 20px 30px;
+        outline: none;
+        border: 2px solid #8b898c;
+        border-radius: 20px;
+        width: 700px;
+        &:focus {
+          border: #8b898c;
+          box-shadow: (0 4px 8px 0 #4f5d7594, 0 6px 20px 0 #4f5d755e);
+        }
+      }
+      #button {
+        background-color: #ef8354;
+        border-radius: 50%;
+        width: 60px;
+        outline: none;
+        margin-left: 5px;
+        // position: relative;
+        // right: 40px;
+        &:hover {
+          background-color: darken($color: #ef8354, $amount: 8);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 40px;
+    text-align: center;
+    min-width: 40%;
+    #starting-text {
+      color: #8b898c;
+    }
+    section {
+      margin: auto;
+      .task {
+        max-width: 70%;
+        display: block;
+        background-color: #bfc0c04d;
+        border-radius: 20px;
+        position: relative;
+        font-size: 20px;
+        padding: 30px;
+        // animation: fade-slide-in 0.5s forwards;
+
+        .text {
+          padding: 0 10px;
+          text-align: left;
+          max-width: 90%;
+          display: inline-block;
+          overflow-wrap: break-word;
+        }
+        .delete {
+          opacity: 0.5;
+          width: 30px;
+          position: absolute;
+          top: 40%;
+          right: 30px;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+        .done {
+          width: 30px;
+          background-color: transparent;
+          border: 2px solid black;
+          border-radius: 50%;
+          position: absolute;
+          left: 30px;
+          &:hover {
+            background-color: darken($color: #ef8354, $amount: 4);
+            cursor: pointer;
+          }
+        }
+      }
+      // .seen {
+      //   display: none;
+      // }
+    }
+  }
+}
+
+@keyframes fade-slide-in {
+  0% {
+    bottom: 40px;
+    opacity: 0.2;
+  }
+  50% {
+    bottom: 20px;
+    opacity: 0.7;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.margin {
+  margin: 15px auto 0;
+}
